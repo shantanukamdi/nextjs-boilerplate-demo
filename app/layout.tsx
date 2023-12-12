@@ -16,6 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <script async type="text/javascript" src="/inmobi.js"></script>
       <body className={inter.className}>{children}</body>
     </html>
   )
