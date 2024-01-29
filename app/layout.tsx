@@ -16,16 +16,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <script type="text/javascript">
-var _iub = _iub || [];
-_iub.csConfiguration = {"askConsentAtCookiePolicyUpdate":true,"enableFadp":true,"enableLgpd":true,"enableTcf":true,"enableUspr":true,"fadpApplies":true,"floatingPreferencesButtonDisplay":"bottom-right","googleAdditionalConsentMode":true,"lang":"en","perPurposeConsent":true,"siteId":3415009,"showBannerForUS":true,"tcfPurposes":{"2":"consent_only","7":"consent_only","8":"consent_only","9":"consent_only","10":"consent_only","11":"consent_only"},"usprApplies":true,"usprPurposes":"s,sh,adv,sd8,sd9,sd5","whitelabel":false,"cookiePolicyId":98921525, "banner":{ "acceptButtonDisplay":true,"closeButtonDisplay":false,"customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"position":"float-top-center","rejectButtonDisplay":true,"showTitle":false }};
-</script>
-<script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3415009.js"></script>
-<script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/beta/stub-v2.js"></script>
-<script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/beta/safe-tcf-v2.js"></script>
-<script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/beta/stub.js"></script>
-<script type="text/javascript" src="//cdn.iubenda.com/cs/beta/iubenda_cs.js" charset="UTF-8" async></script>
-      <body className={inter.className}>{children}</body>
+      <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M3GL8V57');</script>
+<!-- End Google Tag Manager -->
+      <body className={inter.className}>
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3GL8V57"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        {children}
+      </body>
     </html>
   )
 }
